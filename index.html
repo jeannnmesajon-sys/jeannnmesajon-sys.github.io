@@ -5,64 +5,74 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Je Ann N. Mesajon - VA Portfolio</title>
 <style>
+:root{--primary:#0f766e;--secondary:#14b8a6;--bg:#f8fafc;--card:#ffffff;--text:#0f172a;--muted:#475569;--accent:#ccfbf1}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Segoe UI',Arial,sans-serif;background:#f0fdf4;color:#1e293b;line-height:1.6}
-.header{background:linear-gradient(135deg,#14532d,#166534);color:white;padding:40px 20px;text-align:center}
-.profile-img{width:120px;height:120px;border-radius:50%;border:4px solid white;object-fit:cover;margin-bottom:15px;box-shadow:0 4px 15px rgba(0,0,0,.3)}
-.header h1{font-size:28px}
-.header .role{font-size:15px;font-weight:600;margin:5px 0}
-.header .contact{font-size:13px;opacity:.85;margin-top:10px;line-height:1.8}
-.container{max-width:900px;margin:0 auto;padding:20px}
-.card{background:white;border-radius:16px;padding:24px;margin:16px 0;box-shadow:0 4px 20px rgba(0,0,0,.07)}
-.card h2{background:#dcfce7;color:#14532d;padding:8px 14px;border-radius:8px;font-size:13px;margin-bottom:14px}
-.btn{display:inline-block;background:#10b981;color:white;padding:12px 22px;border-radius:10px;text-decoration:none;font-weight:bold;margin:6px;font-size:14px}
-.btn2{background:white;color:#14532d;border:2px solid #14532d}
-ul{padding-left:18px;font-size:14px}li{margin:6px 0}
+body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;padding-bottom:60px}
+.header{background:linear-gradient(135deg,#0d9488,#0f766e);color:white;text-align:center;padding:60px 20px;border-bottom:5px solid var(--secondary)}
+.profile-img{width:130px;height:130px;border-radius:50%;border:4px solid white;object-fit:cover;box-shadow:0 10px 25px rgba(0,0,0,.15)}
+.header h1{font-size:32px;font-weight:700;margin-top:15px;margin-bottom:6px}
+.header .role{font-size:16px;color:#ccfbf1;text-transform:uppercase;letter-spacing:1px;margin-bottom:15px}
+.header .contact{font-size:14px;max-width:600px;margin:0 auto 25px;background:rgba(0,0,0,.15);padding:15px;border-radius:12px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--secondary);color:white;padding:12px 28px;border-radius:50px;text-decoration:none;font-weight:600;font-size:14px;transition:.3s;box-shadow:0 4px 6px rgba(0,0,0,.1);margin:5px}
+.btn:hover{background:#0d9488;transform:translateY(-2px)}
+.btn-outline{background:transparent;color:white;border:2px solid white}
+.btn-outline:hover{background:white;color:var(--primary)}
+.container{max-width:800px;margin:40px auto 0;padding:0 20px}
+.card{background:var(--card);border-radius:16px;padding:30px;margin-bottom:24px;box-shadow:0 4px 6px rgba(0,0,0,.05);border:1px solid #e2e8f0}
+.card h2{color:var(--primary);font-size:14px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px;border-bottom:3px solid var(--secondary);display:inline-block;padding-bottom:4px}
+.card p{color:var(--muted);font-size:15px}
+.skills-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;list-style:none}
+.skills-list li{background:#f1f5f9;padding:10px 16px;border-radius:8px;font-size:14px;font-weight:500;color:#334155}
+.skills-list li::before{content:"✓ ";color:var(--secondary);font-weight:bold}
+.footer-card{text-align:center;background:var(--accent);border:none}
+.footer-card p{color:var(--primary);font-weight:600;font-size:16px;margin-bottom:20px}
 </style>
 </head>
 <body>
 <div class="header">
-<img src="profile.jpeg" alt="Je Ann Mesajon" class="profile-img" onerror="this.src='https://via.placeholder.com/120'">
+<img src="profile.jpeg" alt="Je Ann Mesajon" class="profile-img">
 <h1>Je Ann N. Mesajon</h1>
 <div class="role">Aspiring Virtual Assistant | Office Admin</div>
 <div class="contact">
-📍 Taguig City, PH | 📞 +63-907-187-8037<br>
-📧 jeannnmesajon@gmail.com<br>
-🌐 jeannnnmesajon-sys.github.io | 3rd Year BSOA Student
+<div>📍 Taguig City, PH</div>
+<div>📞 +63-907-187-8037</div>
+<div>📧 jeannnmesajon@gmail.com</div>
+<div>🌐 jeannnnmesajon-sys.github.io</div>
 </div>
-<div style="margin-top:18px">
+<div>
 <a href="mailto:jeannnmesajon@gmail.com" class="btn">📧 Hire Me</a>
-<a href="resume.png" download class="btn btn2">📄 Download Resume</a>
+<a href="resume.png" download class="btn btn-outline">📄 Download Resume</a>
 </div>
 </div>
 
 <div class="container">
 <div class="card">
-<h2>ABOUT ME</h2>
-<p style="font-size:14px">Motivated 3rd Year BSOA student seeking entry-level VA role. 10+ years work experience in supervision & customer service. Reliable, organized, and eager to help your business grow.</p>
+<h2>About Me</h2>
+<p>Motivated 3rd Year BSOA student seeking an entry-level Virtual Assistant role. Backed by 10+ years of professional work experience in supervision and customer service. Reliable, highly organized, and eager to bring administrative efficiency to help your business grow.</p>
 </div>
 
 <div class="card">
-<h2>SKILLS</h2>
-<ul>
-<li>Excel & Google Sheets - Formulas, data entry</li>
+<h2>Skills & Expertise</h2>
+<ul class="skills-list">
+<li>Excel & Google Sheets (Formulas, Data Entry)</li>
 <li>Data Entry & Records Management</li>
-<li>Admin Support - Email, scheduling, filing</li>
+<li>Admin Support (Email & Scheduling)</li>
 <li>10+ Years Supervision & Customer Service</li>
-<li>English, Tagalog, Visaya, Ilonggo, Arabic</li>
+<li>Multilingual (EN, Tagalog, Visaya, Ilonggo, Arabic)</li>
 </ul>
 </div>
 
 <div class="card">
-<h2>EXPERIENCE</h2>
-<p style="font-size:14px"><b>Housekeeping Supervisor - Joblink Inc.</b><br>Uptown Ritz, BGC | Sept 2019 - Present</p>
+<h2>Work Experience</h2>
+<p><b>Housekeeping Supervisor</b><br><span style="color:#0f766e;font-weight:600">Joblink Inc.</span><br><span style="font-size:13px;color:#64748b">Uptown Ritz, BGC | Sept 2019 - Present</span></p>
 </div>
 
-<div class="card" style="text-align:center;background:#f0fdf4">
-<img src="profile.jpeg" alt="Profile" style="width:80px;height:80px;border-radius:50%;margin-bottom:10px" onerror="this.style.display='none'">
-<p style="font-size:14px">Ready to work with you!<br><br>
+<div class="card footer-card">
+<p>Ready to bring value to your team!</p>
+<div>
 <a href="mailto:jeannnmesajon@gmail.com" class="btn">Contact Me</a>
-<a href="resume.png" download class="btn btn2">Download Resume</a></p>
+<a href="resume.png" download class="btn btn-outline" style="background:#0f766e;border-color:#0f766e">Download Resume</a>
+</div>
 </div>
 </div>
 </body>
